@@ -2207,8 +2207,8 @@ nav.navbar.bootsnav {
 
 @media (max-width: 350px) {
   nav.navbar.bootsnav .navbar-header {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   nav.navbar.bootsnav .navbar-nav {
@@ -2475,9 +2475,7 @@ ul.cart-list > li.total > .btn {
 
   nav.navbar .navbar-brand img.logo {
     height: 30px;
-	 .logo-light.png
-        display: none;x
-    }
+	
   }
 
   .attr-nav > ul > li > a {
