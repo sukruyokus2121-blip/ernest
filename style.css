@@ -250,7 +250,7 @@ input {
 }
 
 .bg-gray {
-  background-color: #f7f7f7;
+  background-color: #A8C0E;
 }
 
 .bg-theme-small {
@@ -5094,7 +5094,7 @@ h4 {
   padding: 35px;
   border: none;
   border-radius: 2px;
-  background-color: var(--card-bg-color);
+  background-color:#A8C0E0;
   -webkit-box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
   box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
   transition-timing-function: cubic-bezier(.25,.25,.75,.75);
@@ -5207,3 +5207,14 @@ body {
     padding: 20px;
     border-radius: 8px;
 }
+.default-padding.bottom-less  {
+    background-color: #A8C0E
+    color: #666666;         
+    padding: 20px;
+    border-radius: 8px;
+	
+}
+	
+	
+	
+	
