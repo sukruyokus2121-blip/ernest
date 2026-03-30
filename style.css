@@ -5174,11 +5174,18 @@ nav.navbar .navbar-brand {
   .banner-inner:not(.slider-container),
   .row,
   .grid {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0 auto;
-    max-width: 100%;
-    box-sizing: border-box;
+ .container {
+  width: 100%;
+  max-width: 600px;   /* mobil için ideal */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.container p {
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: left; /* ortadaysa bozuyor */
+}
   }
 
   /* Slider img veya slide kendi responsive yapısını korusun */
@@ -5189,3 +5196,4 @@ nav.navbar .navbar-brand {
   }
 
 } 
+
