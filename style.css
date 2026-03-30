@@ -5197,3 +5197,13 @@ nav.navbar .navbar-brand {
 
 } 
 
+body {
+    background-color: #D6E4F0; /* Arka plan rengini buraya yaz */
+    color: #666666;           /* Yazı rengi */
+}
+.card.featured:after {
+    background-color: #A8C0E0; /* kutu rengi */
+    color: #666666;            /* yazı rengi */
+    padding: 20px;
+    border-radius: 8px;
+}
