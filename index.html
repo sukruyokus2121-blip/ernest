@@ -184,13 +184,148 @@
                         We have been operating since 2019. Your ideas are our business. We take care of all your works in the field of Blockchain such as your NFT designs, Dapp Projects, ICO studies, Defi Projects, Token Projects.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="thumb">
-                        <img src="assets/img/1280-825x510.jpg" alt="Thumb">
-                        <a href="https://t.me/ErnestSoftware/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button item-center">
-                            <i class="fa fa-play"></i>
-                        </a>
-                    </div>
+             <div class="terminal">
+  <div class="header">
+    <div class="dot red"></div>
+    <div class="dot yellow"></div>
+    <div class="dot green"></div>
+    <div class="title">bash — ErnestSoft</div>
+  </div>
+
+  <div class="content" id="output"></div>
+</div>
+
+
+
+<style>
+.terminal {
+  width: 45%;
+  max-width: 900px;
+  height: 420px;
+  background: #0d1117;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: -10px auto;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  font-family: monospace;
+}
+
+.header {
+  background: #1f2937;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.title {
+  margin-left: 10px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.content {
+  padding: 20px;
+  color: white;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  font-size: 16px;
+}
+
+.green-text { color: #00ff9c; }
+.blue-text { color: #7aa2f7; }
+
+.cta {
+  display: block;
+  margin: 20px auto;
+  padding: 14px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+const lines = [
+  { text: "$ Connecting to ErnestSoft system...", class: "blue-text" },
+  { text: "Analyzing your business...", class: "" },
+
+  { text: "✔️ Requirements identified", class: "green-text" },
+  { text: "✔️ Custom software solution ready", class: "green-text" },
+  { text: "✔️ Processes automated", class: "green-text" },
+
+  { text: "", class: "" },
+
+  { text: "$ Enhancing performance...", class: "blue-text" },
+
+  { text: "⚡ Faster systems", class: "blue-text" },
+  { text: "⚡ Lower costs", class: "blue-text" },
+  { text: "⚡ Higher efficiency", class: "blue-text" },
+
+  { text: "", class: "" },
+
+  { text: "✔️ 24/7 support", class: "green-text" },
+  { text: "✔️ Fast delivery", class: "green-text" },
+
+  { text: "", class: "" },
+
+  { text: "▶ Deploying your system...", class: "blue-text" },
+  { text: "✔️ Everything is ready!", class: "green-text" }
+
+];
+
+let i = 0;
+let charIndex = 0;
+
+const output = document.getElementById("output");
+
+function typeWriter() {
+  if (i >= lines.length) {
+    setTimeout(() => {
+      output.innerHTML = "";
+      i = 0;
+      charIndex = 0;
+      typeWriter();
+    }, 1500);
+    return;
+  }
+
+  const line = lines[i];
+
+  if (charIndex === 0) {
+    output.innerHTML += `<span class="${line.class || ''}"></span>`;
+  }
+
+  const spans = output.querySelectorAll("span");
+  const currentSpan = spans[spans.length - 1];
+
+  if (charIndex < line.text.length) {
+    currentSpan.innerHTML += line.text.charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWriter, 20);
+  } else {
+    output.innerHTML += "<br>";
+    i++;
+    charIndex = 0;
+    setTimeout(typeWriter, 300);
+  }
+}
+
+typeWriter();
+</script>
                 </div>
             </div>
         </div>
