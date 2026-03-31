@@ -2348,6 +2348,16 @@ body,
     margin-right: auto;
     line-height: 1.6;
 }
+/* Mobil */
+@media (max-width: 268px) {
+    .chart-area .info h2 {
+        font-size: 36px;
+    }
+
+    .chart-area .info h2 span {
+        font-size: 34px;
+    }
+}
 .chart-area .fun-facts .item {
   width: auto;
   border-right: 1px solid #e7e7e7;
