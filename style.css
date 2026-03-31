@@ -77,7 +77,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   overflow-x: hidden;
-  background-color: #D6E4F0;
+  background-color: #ffffff;
   color: #666666;
   margin: 0;
 }
@@ -250,7 +250,7 @@ input {
 }
 
 .bg-gray {
-  background-color: #A8C0E;
+  background-color: #f7f7f7;
 }
 
 .bg-theme-small {
@@ -258,7 +258,7 @@ input {
 }
 
 .bg-light {
-  background-color: #D6E4F0;
+  background-color: #ffffff;
 }
 
 .bg-theme {
@@ -4334,7 +4334,7 @@ body,
   content: "";
   height: 200%;
   width: 200%;
-  background: #D6E4F0;
+  background: #f7f7f7;
   z-index: -1;
 }
 
@@ -4922,309 +4922,3 @@ footer .twitter-widget .twitter-item:last-child {
   background: url(assets/img/preloader.gif) center no-repeat #fff;
   text-align: center;
 }
-
-
-.offers .items .item {
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 35px;
-  border: none;
-  border-radius: 2px;
-  background-color: var(--card-bg-color);
-  -webkit-box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
-  box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
-  transition-timing-function: cubic-bezier(.25,.25,.75,.75);
-  transition-duration: .4s;
-  transition-property: opacity,transform;
-}
-
-.items .item:first-child .card.featured:before {
-  top: -10px;
-  right: 0;
-  bottom: 0;
-  left: -10px;
-}
-.card.featured:after {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border: none;
-  background-color: inherit;
-}
-.icon-user, .icon-people, .icon-user-female, .icon-user-follow, .icon-user-following, .icon-user-unfollow, .icon-login, .icon-logout, .icon-emotsmile, .icon-phone, .icon-call-end, .icon-call-in, .icon-call-out, .icon-map, .icon-location-pin, .icon-direction, .icon-directions, .icon-compass, .icon-layers, .icon-menu, .icon-list, .icon-options-vertical, .icon-options, .icon-arrow-down, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-up-circle, .icon-arrow-left-circle, .icon-arrow-right-circle, .icon-arrow-down-circle, .icon-check, .icon-clock, .icon-plus, .icon-minus, .icon-close, .icon-event, .icon-exclamation, .icon-organization, .icon-trophy, .icon-screen-smartphone, .icon-screen-desktop, .icon-plane, .icon-notebook, .icon-mustache, .icon-mouse, .icon-magnet, .icon-energy, .icon-disc, .icon-cursor, .icon-cursor-move, .icon-crop, .icon-chemistry, .icon-speedometer, .icon-shield, .icon-screen-tablet, .icon-magic-wand, .icon-hourglass, .icon-graduation, .icon-ghost, .icon-game-controller, .icon-fire, .icon-eyeglass, .icon-envelope-open, .icon-envelope-letter, .icon-bell, .icon-badge, .icon-anchor, .icon-wallet, .icon-vector, .icon-speech, .icon-puzzle, .icon-printer, .icon-present, .icon-playlist, .icon-pin, .icon-picture, .icon-handbag, .icon-globe-alt, .icon-globe, .icon-folder-alt, .icon-folder, .icon-film, .icon-feed, .icon-drop, .icon-drawer, .icon-docs, .icon-doc, .icon-diamond, .icon-cup, .icon-calculator, .icon-bubbles, .icon-briefcase, .icon-book-open, .icon-basket-loaded, .icon-basket, .icon-bag, .icon-action-undo, .icon-action-redo, .icon-wrench, .icon-umbrella, .icon-trash, .icon-tag, .icon-support, .icon-frame, .icon-size-fullscreen, .icon-size-actual, .icon-shuffle, .icon-share-alt, .icon-share, .icon-rocket, .icon-question, .icon-pie-chart, .icon-pencil, .icon-note, .icon-loop, .icon-home, .icon-grid, .icon-graph, .icon-microphone, .icon-music-tone-alt, .icon-music-tone, .icon-earphones-alt, .icon-earphones, .icon-equalizer, .icon-like, .icon-dislike, .icon-control-start, .icon-control-rewind, .icon-control-play, .icon-control-pause, .icon-control-forward, .icon-control-end, .icon-volume-1, .icon-volume-2, .icon-volume-off, .icon-calendar, .icon-bulb, .icon-chart, .icon-ban, .icon-bubble, .icon-camrecorder, .icon-camera, .icon-cloud-download, .icon-cloud-upload, .icon-envelope, .icon-eye, .icon-flag, .icon-heart, .icon-info, .icon-key, .icon-link, .icon-lock, .icon-lock-open, .icon-magnifier, .icon-magnifier-add, .icon-magnifier-remove, .icon-paper-clip, .icon-paper-plane, .icon-power, .icon-refresh, .icon-reload, .icon-settings, .icon-star, .icon-symbol-female, .icon-symbol-male, .icon-target, .icon-credit-card, .icon-paypal, .icon-social-tumblr, .icon-social-twitter, .icon-social-facebook, .icon-social-instagram, .icon-social-linkedin, .icon-social-pinterest, .icon-social-github, .icon-social-google, .icon-social-reddit, .icon-social-skype, .icon-social-dribbble, .icon-social-behance, .icon-social-foursqare, .icon-social-soundcloud, .icon-social-spotify, .icon-social-stumbleupon, .icon-social-youtube, .icon-social-dropbox, .icon-social-vkontakte, .icon-social-steam {
-    font-family: 'icons';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.card.featured:before {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  width: calc(50% + 10px);
-  height: calc(50% + 10px);
-  border: none;
-  background-image: -webkit-linear-gradient(45deg,var(--secondary-color) 15%,var(--primary-color) 65%);
-  background-image: linear-gradient(45deg,var(--secondary-color) 15%,var(--primary-color) 65%);
-  transition-timing-function: cubic-bezier(.25,.25,.75,.75);
-  transition-duration: .4s;
-  transition-property: opacity,transform;
-}
-.primary-button, .primary-button:visited, .primary-button:active {
-  position: relative;
-  z-index: 2;
-  padding: 10px 25px;
-  background-color: var(--primary-color);
-  border-radius: 2px;
-  color: var(--primary-b-color);
-  font-weight: 400;
-}
-.icon-screen-smartphone:before {
-  content: "📱 ";
-}
-.icon {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  font-size: 44px;
-  display: block;
-  margin: auto;
-}
-h4 {
-  margin: 1.5rem 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  font-family: var(--primary-font);
-  color: var(--primary-t-color);
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;
-}
-.icon-puzzle::before {
-  content: "👨🏽‍💻 ";
-}
-.icon-basket::before {
-  content: "🌐";
-}
-.icon-bubble::before {
-  content: "💻";
-}
-.icon-organization::before {
-  content: "📈";
-}
-.icon-user-following:before {
-  content: "🏃🏽‍♂️";
-}
-:root {
-  --primary-font: 'Poppins', sans-serif;
-  --h1-font: 'Gilroy', sans-serif;
-  --h1-size: 6rem;
-  --h1-weight: 900;
-  --h2-size: 3rem;
-  --h2-weight: 600;
-  --p-size: 1rem;
-  --p-weight: 400;
-  --header-bg-color: #111111;
-  --nav-brand-height: 35px;
-  --nav-item-color: #f5f5f5;
-  --hero-bg-color: #111111;
-  --footer-brand-height: 80px;
-  --primary-color: #2d2aec;
-  --secondary-color: #2d2aec;
-  --white-color: #f9f9f9;
-  --black-color: #040402;
-  --dark-grey-color: #191919;
-  --primary-t-color: #2f323a;
-  --secondary-t-color: #f5f5f5;
-  --primary-p-color: #6f6f6f;
-  --secondary-p-color: #8e8e8e;
-  --primary-b-color: #f5f5f5;
-  --primary-l-color: rgba(0, 0, 0, .25);
-  --secondary-l-color: rgba(255, 255, 255, 0.25);
-  --valid-color: #007a4d;
-  --invalid-color: #e34f4f;
-  --primary-bg-color: #f5f5f5;
-  --primary-bg-color-2: #eeeeee;
-  --primary-bg-color-3: #e5e5e5;
-  --secondary-bg-color: #040402;
-  --secondary-bg-color-2: #111111;
-  --secondary-bg-color-3: #191919;
-  --card-bg-color: #f5f5f5;
-  --footer-bg-color: #111111;
-}
-.items .item:last-child .card.featured:before {
-    right: -10px;
-    bottom: -10px;
-}
-.card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: 0.25rem;
-}
-.card {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 35px;
-  border: none;
-  border-radius: 2px;
-  background-color:#A8C0E0;
-  -webkit-box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
-  box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
-  transition-timing-function: cubic-bezier(.25,.25,.75,.75);
-  transition-duration: .4s;
-  transition-property: opacity,transform;
-}
-.highlights .items .item .icon {
-  background-image: -webkit-linear-gradient(45deg,var(--secondary-color) 15%,var(--primary-color) 65%);
-  background-image: linear-gradient(45deg,var(--secondary-color) 15%,var(--primary-color) 65%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  
-}
-.icon-grid:before {
-  content: "🙏🏼";
-}
-.icon-fire:before {
-  content: "🎇";
-}
-element.style {
-  padding: 75px 0;
-}
-section:nth-child(5):not(.elementor-element) {
-  background-color: var(--section-3-bg-color);
-}
-
-.primary-bg {
-  background: #0948b3 !important;
-}
-.ptb-60 {
-  padding: 60px 0;
-}
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-.text-center {
-  text-align: center !important;
-}
-.text-white {
-  color: #fff !important;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-nav.navbar .navbar-brand img.logo {
-    height: 40px;
-    display: inline-block; /* yan yana durması için */
-    vertical-align: middle;
-}
-
-/* Başlangıçta mavi logoyu gizle */
-nav.navbar .navbar-brand img.logo:not(.logo-display) {
-    display: none;
-}
-nav.navbar {
-    background-color: #333333; /* istediğiniz renk kodu, örnek koyu gri */
-}
-nav.navbar .navbar-brand {
-    margin-right: auto; /* Navbar-brand (logo) sola yaslanır */
-}
-/* Mobilde sağ boşluğu kaldır, slider bozulmasın */
-@media (max-width: 768px) {
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* sadece body için */
-  }
-
-  /* Slider dışında tüm container’lar için */
-  .container:not(.slider-container),
-  .banner-inner:not(.slider-container),
-  .row,
-  .grid {
- .container {
-  width: 100%;
-  max-width: 600px;   /* mobil için ideal */
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.container p {
-  line-height: 1.6;
-  font-size: 16px;
-  text-align: left; /* ortadaysa bozuyor */
-}
-  }
-
-  /* Slider img veya slide kendi responsive yapısını korusun */
-  .slider-container img,
-  .slider-container .slide {
-    width: auto; /* kendi ayarı bozulmasın */
-    max-width: none;
-  }
-
-} 
-
-body {
-    background-color: #D6E4F0; /* Arka plan rengini buraya yaz */
-    color: #666666;           /* Yazı rengi */
-}
-.card.featured:after {
-    background-color: #A8C0E0; /* kutu rengi */
-    color: #666666;            /* yazı rengi */
-    padding: 20px;
-    border-radius: 8px;
-}
-.default-padding.bottom-less  {
-    background-color: #A8C0E
-    color: #666666;         
-    padding: 20px;
-    border-radius: 8px;
-	
-}
-	
-.kart {
-  -moz-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-  -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-  -o-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-  padding: 50px;
-  border-top: 2px solid #0460D9;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  background: #f
-	
-	

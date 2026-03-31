@@ -1644,7 +1644,7 @@ nav.navbar.bootsnav {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 1023px) {
 
   .attr-nav {
     margin-right: 0;
@@ -2205,10 +2205,10 @@ nav.navbar.bootsnav {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 767px) {
   nav.navbar.bootsnav .navbar-header {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   nav.navbar.bootsnav .navbar-nav {
@@ -2363,7 +2363,7 @@ ul.cart-list > li.total > .btn {
   padding: 10px 25px !important;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 1024px) {
   nav.navbar ul.nav > li > a {
     padding: 30px 15px;
     font-weight: 300;
@@ -2475,7 +2475,6 @@ ul.cart-list > li.total > .btn {
 
   nav.navbar .navbar-brand img.logo {
     height: 30px;
-	
   }
 
   .attr-nav > ul > li > a {
@@ -2758,10 +2757,4 @@ nav.bootsnav.navbar-full .navbar-toggle:hover span {
 
 body.wrap-nav-sidebar {
   height: auto !important;
-}
-
-@media (max-width: 768px) {
-  .logo logo-scrolled { 
-    display: none !important;
-  }
 }
