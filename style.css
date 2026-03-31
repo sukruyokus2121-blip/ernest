@@ -4947,4 +4947,26 @@ footer .twitter-widget .twitter-item:last-child {
   .title {
     font-size: 12px;
   }
+.fa-bars {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  background: #2563eb;   /* mavi */
+  color: white;          /* ikon rengi */
+
+  border-radius: 10px;
+
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fa-bars:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
 }

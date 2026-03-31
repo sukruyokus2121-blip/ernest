@@ -1659,6 +1659,7 @@ nav.navbar.bootsnav {
   .navbar.navbar-fixed .navbar-brand img {
     position: relative;
     top: 5px;
+	
   }
 
   nav.navbar.navbar-fixed .navbar-toggle {
@@ -2209,6 +2210,7 @@ nav.navbar.bootsnav {
   nav.navbar.bootsnav .navbar-header {
     padding-left: 15px;
     padding-right: 15px;
+	
   }
 
   nav.navbar.bootsnav .navbar-nav {
