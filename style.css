@@ -4992,4 +4992,24 @@ footer .twitter-widget .twitter-item:last-child {
 .fa-bars:hover {
   background: #1d4ed8;
   transform: scale(1.05);
-}
+}  
+	.header{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:white;}
+.logo{font-weight:700;}
+.logo span{color:#5b5bff;}
+
+.hero{position:relative;height:420px;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+#matrix{position:absolute;width:100%;height:100%;opacity:0.6;}
+
+.slides{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;}
+.slide{position:absolute;width:100%;display:flex;align-items:center;justify-content:center;opacity:0;transition:1s;}
+.slide.active{opacity:1;}
+
+.slide-content{text-align:center;max-width:700px;}
+
+.buttons{display:flex;gap:12px;justify-content:center;}
+.btn-primary{background:#5b5bff;color:white;padding:12px 20px;border-radius:10px;}
+.btn-outline{border:2px solid #5b5bff;color:#5b5bff;padding:12px 20px;border-radius:10px;}
+
+.dots{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);display:flex;gap:8px;}
+.dot{width:10px;height:10px;border-radius:50%;background:#ccc;}
+.dot.active{background:#5b5bff;}
