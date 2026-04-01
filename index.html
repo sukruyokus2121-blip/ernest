@@ -513,7 +513,7 @@ typeWriter();
 
     <!-- Start Services 
     ============================================= --> 
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
@@ -521,19 +521,33 @@ typeWriter();
 <title>Services</title>
 
 <style>
-/* SAYFA ARKASI */
+/* GENEL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f7f7f7; /* dış arka plan */
+  background: #f7f7f7; /* TÜM SAYFA AYNI RENK */
 }
 
-/* ORTADAKİ KARA ALAN */
+/* SECTION */
 .service-wrapper {
-  background: #f7f7f7; /* kutuların arka alanı */
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
+  padding: 80px 20px; /* AYIRAN BOŞLUK */
+}
+
+/* BAŞLIK */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #666;
 }
 
 /* GRID */
@@ -542,15 +556,23 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   max-width: 1200px;
-  width: 100%;
+  margin: 0 auto;
 }
 
-/* KUTULAR */
+/* KART */
 .servicexx-card {
-  background: #ffffff; /* SABİT KUTU RENGİ */
+  background: #ffffff;
   border-radius: 16px;
   padding: 30px 20px;
   text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* HOVER */
+.servicexx-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 /* ICON */
@@ -561,8 +583,8 @@ body {
 
 /* TEXT */
 .servicexx-card h3 {
-  margin-bottom: 10px;
   color: #111;
+  margin-bottom: 10px;
 }
 
 .servicexx-card p {
@@ -574,12 +596,7 @@ body {
 .servicexx-card a {
   color: #007bff;
   text-decoration: none;
-}
-
-/* HOVER */
-.servicexx-card:hover {
-  transform: translateY(-6px);
-  transition: 0.3s;
+  font-weight: 500;
 }
 
 /* TABLET */
@@ -595,6 +612,10 @@ body {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  .service-wrapper {
+    padding: 60px 15px;
+  }
 }
 </style>
 
@@ -602,6 +623,11 @@ body {
 <body>
 
 <div class="service-wrapper">
+
+  <div class="section-title">
+    <h2>Our Core Software Services</h2>
+    <p>Every software solution your business needs to grow, all under one roof.</p>
+  </div>
 
   <section class="servicexx">
 
