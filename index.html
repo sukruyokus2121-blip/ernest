@@ -1,162 +1,76 @@
  <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ernest Soft - Blockchain Consulting">
 
-    <!-- ========== Page Title ========== -->
-    <title>Ernest Soft - Blockchain Consulting</title>
+                        
+                                        <!-- HEADER -->
+<div class="header">
+  <div class="logo">Ernest<span>Soft</span></div>
+  <div class="header-right">
+    <div class="portal-btn">Portal</div>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+  </div>
+</div>
 
-    <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-btn" onclick="toggleMenu()">✕</div>
+  <a href="#">Anasayfa</a>
+  <a href="#">Hizmetler</a>
+  <a href="#">Hakkımızda</a>
+  <a href="#">İletişim</a>
+</div>
 
-    <!-- ========== Start Stylesheet ========== -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.css" rel="stylesheet" />
-    <link href="assets/css/bootsnav.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet" />
-    <!-- ========== End Stylesheet ========== -->
+<!-- HERO / SLIDER -->
+<div class="hero">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
-    <![endif]-->
+  <canvas id="matrix"></canvas>
 
-    <!-- ========== Google Fonts ========== -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+  <div class="slides">
 
-</head>
+    <div class="slide active">
+      <div class="slide-content">
+        <h1>Şirketinizin Dijital Dönüşümünü<br><span>Hızlandıran AI Çözümleri</span></h1>
+        <p>Yapay zekanın gücüyle iş süreçlerinizi optimize edin.</p>
+        <div class="buttons">
+          <a href="#" class="btn-primary">Bize Ulaşın</a>
+          <a href="#" class="btn-outline">Hakkımızda</a>
+        </div>
+      </div>
+    </div>
 
-<body>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-4d3d2a8e-7e2b-48da-a399-bda77567ebcf"></div>
-    <!-- Header 
-    ============================================= -->
-    <header id="home">
+    <div class="slide">
+      <div class="slide-content">
+        <h1>Modern Software<br><span>Solutions</span></h1>
+        <p>Build scalable digital systems.</p>
+        <div class="buttons">
+          <a href="#" class="btn-primary">Bize Ulaşın</a>
+          <a href="#" class="btn-outline">Hakkımızda</a>
+        </div>
+      </div>
+    </div>
 
-         <!-- Start Navigation -->
-         <nav class="navbar navbar-default navbar-fixed bottom-border white no-background transparent bootsnav">
+    <div class="slide">
+      <div class="slide-content">
+        <h1>Take Your Business<br><span>To The Future</span></h1>
+        <p>Leverage smart automation.</p>
+        <div class="buttons">
+          <a href="#" class="btn-primary">Bize Ulaşın</a>
+          <a href="#" class="btn-outline">Hakkımızda</a>
+        </div>
+      </div>
+    </div>
 
-            <div class="container">
+  </div>
 
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo-light.png" class="logo logo-display" alt="Logo">
-                        <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo">
-                    </a>
-                </div>
-                <!-- End Header Navigation -->
+  <!-- DOTS -->
+  <div class="dots">
+    <div class="dot active" onclick="goSlide(0)"></div>
+    <div class="dot" onclick="goSlide(1)"></div>
+    <div class="dot" onclick="goSlide(2)"></div>
+  </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
-                        <li>
-                            <a class="smooth-menu" href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="smooth-menu" href="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="smooth-menu" href="#services">Services</a>
-                        </li>
-                        <li>
-                           <a class="smooth-menu" href="#contact">Contact</a>
-                        </li>
-                       
-					   
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div>
-
-        </nav>
-        <!-- End Navigation -->
-
-    </header>
-    <!-- End Header -->
-    <!-- Start Banner 
-    ============================================= -->
-    <div class="banner-area inc-info text-center">
-        <div id="bootcarousel" class="carousel slide carousel-fade animate_text" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner transparent-nav text-light carousel-zoom">
-                <div class="item active">
-                    <div class="slider-thumb bg-cover"><img class="shadow dark" width="100%" height="100%" src="./assets/img/maker.gif" alt="Ernest Soft"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <div class="content">
-                                            <h1 data-animation="animated fadeInDown">Start with us for <span>Awesome</span> business</h1>
-                                            <p data-animation="animated slideInUp">
-                                                All that is needed for a great job is imagination.<br> The only way to make dreams come true is to wake up.
-                                            </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="https://t.me/ErnestSoftware" style="font-size: 18px;"><i class="fab fa-portfolio"></i> portfolio</a></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slider-thumb bg-cover"><img class="shadow dark" width="100%" height="100%" src="./assets/img/1188751.jpg" alt="Ernest Soft"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <div class="content">
-                                            <h1 data-animation="animated fadeInDown">For making a <span>Plan</span> in Your Business</h1>
-                                            <p data-animation="animated slideInUp">
-                                                Make sure to contact us for a just-in-time delivery.
-                                            </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="https://t.me/ErnestSoftware
-											" style="font-size: 18px;"><i class="fab fa-portfolio"></i> portfolio</a></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slider-thumb bg-cover"><img class="shadow dark" width="100%" height="100%" src="./assets/img/3862132.jpg" alt="Ernest Soft"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <div class="content">
-                                            <h1 data-animation="animated fadeInDown">Find Value And <span>Build</span> Confidence</h1>
-                                            <p data-animation="animated slideInUp">
-                                                Together with our team, we value and add value to you.
-                                            </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="https://t.me/ErnestSoftware" style="font-size: 18px;"><i class="fab fa-portfolio"></i> portfolio</a></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</div>
             </div>
             <!-- End Wrapper for slides -->
 
