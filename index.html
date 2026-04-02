@@ -318,18 +318,18 @@ const ctx=canvas.getContext("2d");
 
 let drops=[];
 let fontSize=16;
-let density=3;
+let density=2; // 🔥 kolonlar daha sık → yoğunluk artar
 
 function resize(){
-canvas.width=window.innerWidth;
+    canvas.width=window.innerWidth;
 
-let hero=document.querySelector(".hero");
-canvas.height = hero ? hero.offsetHeight : window.innerHeight;
+    let hero=document.querySelector(".hero");
+    canvas.height = hero ? hero.offsetHeight : window.innerHeight;
 
-let columns=Math.floor(canvas.width/(fontSize*density));
+    let columns=Math.floor(canvas.width/(fontSize*density));
 
-drops=[];
-for(let i=0;i<columns;i++) drops[i]=Math.random()*canvas.height;
+    drops=[];
+    for(let i=0;i<columns;i++) drops[i]=Math.random()*canvas.height;
 }
 
 resize();
@@ -337,37 +337,35 @@ window.addEventListener("resize",resize);
 
 function draw(){
 
-ctx.fillStyle="rgba(247,248,252,0.06)";
-ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle="rgba(247,248,252,0.06)";
+    ctx.fillRect(0,0,canvas.width,canvas.height);
 
-ctx.fillStyle="rgba(91,91,255,0.6)";
-ctx.font=fontSize+"px monospace";
+    ctx.fillStyle="rgba(91,91,255,0.7)"; // biraz daha belirgin
+    ctx.font=fontSize+"px monospace";
 
-for(let i=0;i<drops.length;i++){
+    for(let i=0;i<drops.length;i++){
 
-// 🔥 sadece 0 veya 1, ama boşluklu yazılacak
-if(Math.random() > 0.65){
+        // 🔥 daha fazla yazı → yoğunluk artar
+        if(Math.random() > 0.5){
 
-let text = Math.random()>0.5 ? "0" : "1";
+            let text = Math.random()>0.5 ? "0" : "1";
 
-let x = i * fontSize * density;
-let y = drops[i] * fontSize;
+            let x = i * fontSize * density;
+            let y = drops[i] * fontSize;
 
-// 🔥 boşluk efekti için küçük offset
-let offsetX = Math.random() * 6;
+            ctx.fillText(text, x, y);
+        }
 
-ctx.fillText(text, x + offsetX, y);
+        // 🔥 düşüş hızı dengeli
+        drops[i] += 0.5;
+
+        if(drops[i]*fontSize > canvas.height && Math.random() > 0.95){
+            drops[i] = 0;
+        }
+    }
 }
 
-drops[i] += 0.5;
-
-if(drops[i]*fontSize > canvas.height && Math.random() > 0.96){
-drops[i] = 2;
-}
-}
-}
-
-setInterval(draw, 100);
+setInterval(draw, 90); // 🔥 biraz daha sık çizim → yoğunluk artar
 </script>
 
 </body>
