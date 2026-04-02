@@ -557,7 +557,7 @@ i.fas.fa-envelope-open {
 
 .top-border {
   overflow: hidden;
-  
+  border-top: 1px solid #e7e7e7;
 }
 
 header {
@@ -2329,7 +2329,7 @@ body,
 }
 
 .chart-area .info h2 {
-   font-size: 38px;
+ margin-top:-20px;
     font-weight: 700;
     color: #0f172a;
     line-height: 1.2;
@@ -4997,3 +4997,13 @@ footer .twitter-widget .twitter-item:last-child {
   transform: scale(1.05);
 }
 
+.slider {
+  position: relative;
+}
+
+.slider-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
