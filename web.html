@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Web Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin:0; padding:0; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 3em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: #1e3a8a;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            flex: 1 1 250px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+		.home-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #fff;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .card-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+        .card h3 { margin-bottom: 15px; font-size: 1.5em; }
+        .card p { color: #555; }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+        }
+        footer a { color: #ffffff; text-decoration: none; font-weight: bold; }
+        footer a:hover { text-decoration: underline; }
+
+        @media(max-width: 768px){
+            .cards { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Crypto Web Development</h1>
+    <p>Secure, blockchain-powered web solutions for crypto and fintech projects.</p>
+	<a href="index.html" class="home-btn">🏠 Ana Sayfa</a>
+</header>
+
+<section>
+    <div class="section-title">Our Services</div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Web3 Development</h3>
+            <p>Decentralized web applications (DApps) and smart contract integration.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">💹</div>
+            <h3>Crypto Platforms</h3>
+            <p>Exchange platforms, wallets, and crypto trading solutions.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🔗</div>
+            <h3>Blockchain Solutions</h3>
+            <p>Custom blockchain solutions for fintech, supply chain, and DeFi projects.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>DeFi Development</h3>
+            <p>Build decentralized finance applications, yield farming, staking, and lending platforms.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">Why Choose Us?</div>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Our team delivers secure, scalable, and modern crypto web applications. We specialize in blockchain, Web3, DeFi, and fintech technologies to ensure your projects are fast, reliable, and user-focused.
+    </p>
+</section>
+
+<footer>
+    &copy; 2026 All Rights Reserved. <a href="index.html">Back to Home</a>
+</footer>
+
+</body>
+</html>
