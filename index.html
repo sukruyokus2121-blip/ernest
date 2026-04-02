@@ -318,7 +318,7 @@ const ctx=canvas.getContext("2d");
 
 let drops=[];
 let fontSize=16;
-let density=2; // 🔥 kolonlar daha sık → yoğunluk artar
+let density=1.8; // 🔥 daha yoğun kolon
 
 function resize(){
     canvas.width=window.innerWidth;
@@ -340,13 +340,13 @@ function draw(){
     ctx.fillStyle="rgba(247,248,252,0.06)";
     ctx.fillRect(0,0,canvas.width,canvas.height);
 
-    ctx.fillStyle="rgba(91,91,255,0.7)"; // biraz daha belirgin
+    ctx.fillStyle="rgba(91,91,255,0.75)"; // 🔥 biraz daha belirgin
     ctx.font=fontSize+"px monospace";
 
     for(let i=0;i<drops.length;i++){
 
-        // 🔥 daha fazla yazı → yoğunluk artar
-        if(Math.random() > 0.5){
+        // 🔥 daha sık yazı
+        if(Math.random() > 0.45){
 
             let text = Math.random()>0.5 ? "0" : "1";
 
@@ -356,16 +356,16 @@ function draw(){
             ctx.fillText(text, x, y);
         }
 
-        // 🔥 düşüş hızı dengeli
-        drops[i] += 0.5;
+        // 🔥 biraz daha hızlı akış
+        drops[i] += 0.65;
 
-        if(drops[i]*fontSize > canvas.height && Math.random() > 0.95){
+        if(drops[i]*fontSize > canvas.height && Math.random() > 0.94){
             drops[i] = 0;
         }
     }
 }
 
-setInterval(draw, 90); // 🔥 biraz daha sık çizim → yoğunluk artar
+setInterval(draw, 80); // 🔥 daha hızlı frame
 </script>
 
 </body>
