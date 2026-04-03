@@ -109,6 +109,24 @@
                 align-items: center;
 				
             }
+			@media (max-width: 768px) {
+    header {
+        padding: 30px 15px; /* Daha az boşluk */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Başlık küçüldü */
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .home-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
         }
     </style>
 </head>
@@ -117,7 +135,9 @@
 <header>
     <h1>Crypto & Fintech Mobile Apps</h1>
     <p>Secure, scalable, and high-performance apps for crypto, blockchain, and digital finance.</p>
-	<a href="index.html" class="home-btn">🏠 Home</a>
+<a href="index.html#services" class="home-btn">
+    <span>←</span> Back to Services
+</a>
 </header>
 
 <section>

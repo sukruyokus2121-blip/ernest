@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX Design Services</title>
+    <title>Crypto Marketing</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
         * { box-sizing: border-box; margin:0; padding:0; }
+
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f4f7fa;
@@ -23,21 +25,28 @@
         header h1 { font-size: 3em; margin-bottom: 10px; }
         header p { font-size: 1.2em; }
 
-        .cta-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 35px;
-            background: #3b82f6;
-            color: white;
-            font-weight: bold;
-            border-radius: 50px;
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #fff;
+            color: #1e3a8a;
             text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
             transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
-        .cta-button:hover {
-            background: #2563eb;
-            transform: scale(1.05);
+        .home-btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .home-btn:hover svg {
+            transform: translateX(-4px);
         }
 
         section {
@@ -58,23 +67,11 @@
             flex-wrap: wrap;
             gap: 20px;
         }
-.home-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    background: #fff;
-    color: #1e3a8a;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: 0.3s;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
+
         .card {
             background: white;
             flex: 1 1 250px;
-            padding: 25px;
+            padding: 30px 20px;
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -83,91 +80,125 @@
 
         .card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
 
         .card-icon {
             font-size: 45px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-       footer {
-    text-align: center;
-    padding: 40px;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-}
+        /* Showcase Section */
+        .showcase {
+            text-align: center;
+        }
+
+        .showcase-box {
+            background: #111827;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
         }
 
         @media(max-width:768px){
+            header { padding: 30px 15px; }
+            header h1 { font-size: 1.8em; }
             .cards { flex-direction: column; }
         }
+		footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>UI/UX Design Services</h1>
-    <p>We design intuitive, modern, and user-focused digital experiences that convert.</p>
-	
+    <h1>Crypto Marketing</h1>
+    <p>Grow your crypto project with powerful marketing strategies.</p>
 
-    <a href="#" class="cta-button">✨ Start Your Design</a>
-	
-    <p style="margin-top:10px; opacity:0.8;">Free consultation • Fast delivery</p>
-	<a href="index.html" class="home-btn">🏠 Ana Sayfa</a>
+    <a href="index.html#services" class="home-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+        </svg>
+        Back to Services
+    </a>
 </header>
 
 <section>
-    <div class="section-title">Our UI/UX Services</div>
+    <div class="section-title">Our Marketing Services</div>
+
     <div class="cards">
 
         <div class="card">
-            <div class="card-icon">🧠</div>
-            <h3>User Research</h3>
-            <p>Understand your users through research, personas, and journey mapping.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon">📐</div>
-            <h3>Wireframing</h3>
-            <p>Create structured layouts and flows before visual design begins.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon">🎨</div>
-            <h3>UI Design</h3>
-            <p>Design modern, clean, and visually appealing interfaces.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon">⚙️</div>
-            <h3>Prototyping</h3>
-            <p>Interactive prototypes to visualize real user interactions.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon">📱</div>
-            <h3>Mobile Design</h3>
-            <p>Responsive and mobile-first experiences for all devices.</p>
+            <div class="card-icon">📣</div>
+            <h3>Social Media Marketing</h3>
+            <p>Grow your presence on Twitter, Telegram, and Discord.</p>
         </div>
 
         <div class="card">
             <div class="card-icon">🚀</div>
-            <h3>UX Optimization</h3>
-            <p>Improve usability, engagement, and conversion rates.</p>
+            <h3>Launch Campaigns</h3>
+            <p>Full marketing strategy for token and NFT launches.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🎯</div>
+            <h3>Paid Advertising</h3>
+            <p>Targeted ads across crypto and mainstream platforms.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Influencer Marketing</h3>
+            <p>Work with top crypto influencers and communities.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🌆</div>
+            <h3>Global Billboard Campaigns</h3>
+            <p>Outdoor advertising in major cities like New York, Dubai, and London.</p>
         </div>
 
     </div>
 </section>
 
+<section class="showcase">
+    <div class="section-title">Global Exposure</div>
+
+    <div class="showcase-box">
+        <h2>Billboard Campaign Management</h2>
+        <p style="margin-top:15px;">
+            We manage high-impact billboard campaigns in world-class locations.
+            From design to placement, we ensure maximum visibility and credibility
+            for your crypto project.
+        </p>
+    </div>
+</section>
+
 <section>
     <div class="section-title">Why Choose Us?</div>
+
     <p style="text-align:center; max-width:700px; margin:auto;">
-        We combine creativity with usability. Our designs are not only beautiful but also optimized for user experience, ensuring higher engagement and better conversion.
+        We specialize in crypto-native marketing strategies that deliver real growth.
+        From community building to global exposure, we help your project stand out.
     </p>
 </section>
 
 <footer>
-    &copy; 2026 All Rights Reserved. <a href="index.html">Back to Home</a>
+   &copy; 2026 All Rights Reserved. <a href="index.html">Back to Home</a>
 </footer>
 
 </body>

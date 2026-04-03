@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f6f8fc;
+  color:#1a1a1a;
+}
+
+/* HERO */
+.hero{
+  padding:70px 15px;
+  text-align:center;
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
+  color:#fff;
+}
+
+.hero h1{
+  font-size:30px;
+}
+
+/* HOME BUTTON */
+.home-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 18px;
+  background:#fff;
+  color:#1e3a8a;
+  text-decoration:none;
+  border-radius:25px;
+  font-size:14px;
+  font-weight:600;
+  transition:0.3s;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.home-btn:hover{
+  background:#e5e7eb;
+  transform:translateY(-3px);
+}
+
+/* SECTION */
+.section{
+  padding:50px 15px;
+}
+
+.container{
+  max-width:950px;
+  margin:auto;
+}
+
+/* TITLE */
+.section h2{
+  font-size:22px;
+  margin-bottom:20px;
+  position:relative;
+  font-weight:600;
+}
+
+.section h2::after{
+  content:"";
+  display:block;
+  width:40px;
+  height:3px;
+  background:#4f46e5;
+  margin-top:6px;
+  border-radius:2px;
+}
+
+/* GRID */
+.grid,
+.approach,
+.tech-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+/* CARD */
+.card,
+.approach div,
+.tech-card{
+  background:#fff;
+  border-radius:16px;
+  padding:15px;
+  aspect-ratio:1/1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.05);
+  transition:0.3s;
+
+  opacity:0;
+  transform:translateY(20px);
+  animation:fadeUp 0.6s ease forwards;
+}
+
+/* ANIMATION */
+.card:nth-child(1){animation-delay:.1s;}
+.card:nth-child(2){animation-delay:.2s;}
+.card:nth-child(3){animation-delay:.3s;}
+.card:nth-child(4){animation-delay:.4s;}
+.card:nth-child(5){animation-delay:.5s;}
+.card:nth-child(6){animation-delay:.6s;}
+
+.approach div:nth-child(1){animation-delay:.1s;}
+.approach div:nth-child(2){animation-delay:.2s;}
+.approach div:nth-child(3){animation-delay:.3s;}
+.approach div:nth-child(4){animation-delay:.4s;}
+
+.tech-card:nth-child(1){animation-delay:.1s;}
+.tech-card:nth-child(2){animation-delay:.2s;}
+.tech-card:nth-child(3){animation-delay:.3s;}
+.tech-card:nth-child(4){animation-delay:.4s;}
+.tech-card:nth-child(5){animation-delay:.5s;}
+.tech-card:nth-child(6){animation-delay:.6s;}
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* HOVER */
+.card:hover,
+.approach div:hover,
+.tech-card:hover{
+  transform:translateY(-8px) scale(1.03);
+  box-shadow:0 20px 40px rgba(79,70,229,0.15);
+}
+
+/* ICON */
+.icon{
+  width:34px;
+  height:34px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eef2ff;
+  border-radius:8px;
+  font-size:15px;
+  margin-bottom:6px;
+}
+
+/* TEXT */
+.card h3,
+.approach h3{
+  font-size:14px;
+  margin-bottom:4px;
+}
+
+.card p,
+.approach p{
+  font-size:12px;
+  color:#666;
+}
+
+/* TECH */
+.tech-card img{
+  width:42px;
+  margin-bottom:6px;
+}
+
+.tech-card h3{
+  font-size:13px;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
+  color:#fff;
+  margin-top:30px;
+  font-size:13px;
+}
+
+/* DESKTOP */
+@media(min-width:768px){
+  .container{
+    max-width:1100px;
+  }
+
+  .grid,
+  .approach,
+  .tech-grid{
+    grid-template-columns:repeat(4,1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>About Us</h1>
+  <a href="index.html" class="home-btn">🏠 Home</a>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+<div class="container">
+
+<h2>Our Expertise</h2>
+
+<div class="grid">
+  <div class="card">
+    <div class="icon">🎨</div>
+    <h3>UI/UX Design</h3>
+    <p>User-centered experiences</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🌐</div>
+    <h3>Web Development</h3>
+    <p>Modern web applications</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">⛓</div>
+    <h3>Blockchain</h3>
+    <p>Smart contracts & DeFi</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🤖</div>
+    <h3>AI Solutions</h3>
+    <p>Intelligent systems</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">📊</div>
+    <h3>CRM & ERP</h3>
+    <p>Business process optimization</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🚀</div>
+    <h3>SEO</h3>
+    <p>Growth-driven strategies</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- APPROACH -->
+<div class="section">
+<div class="container">
+
+<h2>Our Approach</h2>
+
+<div class="approach">
+  <div>
+    <div class="icon">🎯</div>
+    <h3>Strategy</h3>
+    <p>Clear and structured planning</p>
+  </div>
+
+  <div>
+    <div class="icon">⚡</div>
+    <h3>Speed</h3>
+    <p>Optimized processes</p>
+  </div>
+
+  <div>
+    <div class="icon">🔒</div>
+    <h3>Security</h3>
+    <p>Robust infrastructure</p>
+  </div>
+
+  <div>
+    <div class="icon">🛠</div>
+    <h3>Support</h3>
+    <p>Continuous assistance</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- TECH -->
+<div class="section">
+<div class="container">
+
+<h2>Technologies We Use</h2>
+
+<div class="tech-grid">
+  <div class="tech-card">
+    <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg">
+    <h3>Next.js</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg">
+    <h3>Laravel</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg">
+    <h3>Tailwind</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
+    <h3>Python</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum-icon-purple.svg">
+    <h3>Blockchain</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg">
+    <h3>Node.js</h3>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+  © 2026 All Rights Reserved
+</div>
+
+</body>
+</html>
