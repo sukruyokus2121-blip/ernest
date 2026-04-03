@@ -60,8 +60,18 @@ body{background:#f7f8fc;overflow-x:hidden;}
 
 /* HEADER */
 .headers{
-display:flex;justify-content:space-between;align-items:center;
-padding:12px 20px;background:white;
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+
+    z-index: 9999;
 }
 .logo{font-size:20px;font-weight:700;}
 .logo span{color:#5b5bff;}
@@ -80,19 +90,35 @@ color:white;font-size:18px;cursor:pointer;
 }
 
 /* MOBILE MENU */
-.mobile-menu{
-position:fixed;top:0;right:-100%;
-width:75%;
-background:#fff;
-box-shadow:-5px 0 20px rgba(0,0,0,0.1);
-padding:50px 20px;
-display:flex;
-flex-direction:column;
-gap:18px;
-transition:0.3s;
-z-index:999;
+.mobile-menu {
+    position: fixed;
+
+    top: 62px;
+    right: -100%;
+
+    width: 220px; /* DARALT */
+    height: auto; /* İÇERİĞE GÖRE */
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 15px;
+
+    border-radius: 10px 0 0 10px; /* daha güzel görünüm */
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+
+    transition: right 0.3s ease;
+
+    z-index: 9998;
+
 }
-.mobile-menu.active{right:0; width: 35%   }
+.mobile-menu.active {
+    right: 0px; /* TAM YAPIŞMASIN → daha şık */
+
+}
 
 
 .close-btn{
