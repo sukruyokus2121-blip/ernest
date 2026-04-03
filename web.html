@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<div class="headers">
+<div class="logo">Ernest<span>Soft</span></div>
+<div class="headers-right">
+<a href="https://t.me/ErnestSoftware" class="portal-btn">Portal</a>
+<div class="menu" onclick="toggleMenu()">☰</div>
+</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+<div class="close-btn" onclick="toggleMenu()">✕</div>
+<a href="index.html">Home</a>
+<a href="index.html#services">Services</a>
+<a href="about.html">About us</a>
+<a href="index.html#contact">Contact</a>
+</div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Web Development</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+	
         * { box-sizing: border-box; margin:0; padding:0; }
         body {
             font-family: 'Roboto', sans-serif;
@@ -17,7 +33,7 @@
         header {
             background: linear-gradient(135deg, #0f172a, #1e3a8a);
             color: white;
-            padding: 60px 20px;
+            padding: 90px 20px;
             text-align: center;
         }
         header h1 { font-size: 3em; margin-bottom: 10px; }
@@ -28,6 +44,35 @@
             max-width: 1000px;
             margin: 0 auto;
         }
+		.headers{
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+
+    z-index: 9999;
+}
+.logo{font-size:20px;font-weight:700;}
+.logo span{color:#5b5bff;}
+
+.headers-right{display:flex;align-items:center;gap:10px;}
+
+.portal-btn{
+background:#0d1b2a;color:white;
+padding:6px 12px;border-radius:8px;font-size:12px;
+}
+
+.menu{
+width:38px;height:38px;background:#5b5bff;
+border-radius:10px;display:flex;justify-content:center;align-items:center;
+color:white;font-size:18px;cursor:pointer;
+}
         .section-title {
             text-align: center;
             margin-bottom: 40px;
@@ -52,7 +97,7 @@
 			
         }@media (max-width: 768px) {
     header {
-        padding: 30px 15px; /* Daha az boşluk */
+        padding: 90px 15px; /* Daha az boşluk */
     }
 
     header h1 {
@@ -90,6 +135,37 @@
             margin-bottom: 15px;
             color: #1e3a8a;
         }
+		.mobile-menu {
+    position: fixed;
+
+    top: 62px;
+    right: -100%;
+
+    width: 220px; /* DARALT */
+    height: auto; /* İÇERİĞE GÖRE */
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 15px;
+
+    border-radius: 10px 0 0 10px; /* daha güzel görünüm */
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+
+    transition: right 0.3s ease;
+
+    z-index: 9998;
+
+}
+.mobile-menu.active {
+    right: 0px; /* TAM YAPIŞMASIN → daha şık */
+
+}
+		
+		
         .card h3 { margin-bottom: 15px; font-size: 1.5em; }
         .card p { color: #555; }
 
@@ -110,11 +186,11 @@
 <body>
 
 <header>
+
     <h1>Crypto Web Development</h1>
     <p>Secure, blockchain-powered web solutions for crypto and fintech projects.</p>
-	<a href="index.html#services" class="home-btn">
-    <span>←</span> Back to Services
-</a>
+	
+
 </header>
 
 <section>
@@ -153,6 +229,11 @@
 <footer>
     &copy; 2026 All Rights Reserved. <a href="index.html">Back to Home</a>
 </footer>
-
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("active");
+}
+</script>
 </body>
 </html>
