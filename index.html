@@ -43,8 +43,6 @@
 </head>
 
 <body>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-4d3d2a8e-7e2b-48da-a399-bda77567ebcf"></div>
   <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -257,7 +255,7 @@ transform:scale(1.2);
 <div class="headers">
 <div class="logo">Ernest<span>Soft</span></div>
 <div class="headers-right">
-<a href="https://t.me/ErnestSoftware" class="portal-btn">Portfolio</a>
+<a href="https://t.me/ErnestSoftware" class="portal-btn">Portal</a>
 <div class="menu" onclick="toggleMenu()">☰</div>
 </div>
 </div>
@@ -267,7 +265,7 @@ transform:scale(1.2);
 <a href="#matrix">Home</a>
 <a href="#services">Services</a>
 <a href="About.html">About us</a>
-<a href="#contact">Contact</a>
+<a href="#">Contact</a>
 </div>
 
 <div class="hero">
@@ -280,8 +278,8 @@ transform:scale(1.2);
 <h1>Modern Software <br><span>Solution</span></h1>
 
 <div class="buttons">
-<a href="#contact" class="btn-primary">Contact Us</a>
-<a href="About.html" class="btn-outline">More About Us</a>
+<a href="#" class="btn-primary">Contact Us</a>
+<a href="about.html" class="btn-outline">More About Us</a>
 </div>
 </div>
 </div>
@@ -291,8 +289,8 @@ transform:scale(1.2);
 <h1>Secure Blockchain   <br><span>Solutions</span></h1>
 
 <div class="buttons">
-<a href="#contact" class="btn-primary">Contact Us</a>
-<a href="About.html" class="btn-outline">More About Us</a>
+<a href="#" class="btn-primary">Contact Us</a>
+<a href="#" class="btn-outline">More About Us</a>
 </div>
 </div>
 </div>
@@ -301,8 +299,8 @@ transform:scale(1.2);
 <h1>Take Your Business<br><span>To The Future</span></h1>
 
 <div class="buttons">
-<a href="#contact" class="btn-primary">Contact Us</a>
-<a href="About.html" class="btn-outline">More About Us</a>
+<a href="#" class="btn-primary">Contact Us</a>
+<a href="#" class="btn-outline">More About Us</a>
 </div>
 </div>
 </div>
@@ -829,6 +827,323 @@ body {
         </div>
     </div>
     <!-- End Our Goal -->
+
+<style>
+/* PREMIUM TESTIMONIALS */
+.testimonials-premium {
+    padding: 100px 0;
+    background: #f8fafc;
+    position: relative;
+    overflow: hidden;
+}
+.testimonials-premium::before {
+    content: ''; 
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    background: radial-gradient(circle at top right, rgba(91,91,255,0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+.testi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+.testi-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.testi-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(91,91,255,0.05), transparent);
+    opacity: 0; transition: 0.4s; pointer-events: none; border-radius: 20px;
+}
+.testi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(91,91,255,0.12);
+    border-color: rgba(91,91,255,0.1);
+}
+.testi-card:hover::before { opacity: 1; }
+.testi-card .quote-icon {
+    font-size: 38px;
+    color: #5b5bff;
+    opacity: 0.1;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: 0.4s;
+}
+.testi-card:hover .quote-icon { opacity: 0.25; transform: scale(1.1); }
+.testi-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-style: italic;
+}
+.testi-author {
+    display: flex;
+    flex-direction: column;
+}
+.testi-author h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+.testi-author span {
+    font-size: 13px;
+    color: #5b5bff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.testimonials-premium .site-heading {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.testimonials-premium .site-heading h2 {
+    color: #0f172a;
+    font-size: 36px;
+    font-weight: 700;
+}
+.testimonials-premium .site-heading h2 span {
+    background: linear-gradient(to right, #5b5bff, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.testimonials-premium .site-heading p {
+    color: #64748b;
+}
+.testi-stars {
+    color: #fbbf24;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 5px;
+}
+</style>
+
+    <!-- Start Testimonials -->
+    <div id="testimonials" class="testimonials-premium">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-center">
+                        <h2>Client <span>Feedback</span></h2>
+                        <span class="devider" style="background: linear-gradient(to right, #5b5bff, #c084fc); margin: 15px auto; width: 60px; height: 4px; border-radius: 2px;"></span>
+                        <p>
+                            What our partners and clients say about our bespoke software and blockchain solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testi-grid">
+                        
+                        <!-- Item 1 -->
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="testi-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>
+                                "ErnestSoft transformed our ideas into a functional, highly secure blockchain application faster than we expected. Their team's expertise is unmatched."
+                            </p>
+                            <div class="testi-author">
+                                <h4>John Doe</h4>
+                                <span>CEO, TechVision</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="testi-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>
+                                "The mobile app they delivered is flawless. They were communicative throughout the entire process. Security is top notch. Highly recommended!"
+                            </p>
+                            <div class="testi-author">
+                                <h4>Sarah Jenkins</h4>
+                                <span>Founder, Appify</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="testi-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>
+                                "We needed a scalable web solution and ErnestSoft provided just that. Their dedication to quality and performance is truly commendable."
+                            </p>
+                            <div class="testi-author">
+                                <h4>Michael Smith</h4>
+                                <span>CTO, Innovate Solutions</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start FAQ -->
+    <div id="faq" class="faq-area default-padding" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-center">
+                        <h2>Frequently Asked <span>Questions</span></h2>
+                        <span class="devider" style="background: linear-gradient(to right, #5b5bff, #c084fc); margin: 15px auto; width: 60px; height: 4px; border-radius: 2px;"></span>
+                        <p>
+                            Find answers to your questions about our development process and services here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="acd-items acd-arrow">
+                        <div class="panel-group symb" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac1">
+                                            How does your project development process work?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            We start with a requirements analysis. Then, we complete your project through design, development, testing, and deployment stages. We maintain constant communication with you throughout the entire process.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac2" class="collapsed">
+                                            What technologies do you use?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Although it varies depending on the project and needs, we generally work with Node.js, React, Vue, Python, Solidity, Web3.js, and modern database solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac3" class="collapsed">
+                                            Do you provide support after projects are delivered?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Yes, depending on the size and scope of the project, we provide free support for a certain period after delivery. We can also make long-term maintenance agreements.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac4" class="collapsed">
+                                            Do you do blockchain and crypto integrations?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Yes, we provide services with our expert team in smart contract development, wallet integrations (MetaMask, etc.), and general Web3 solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End FAQ -->
+<style>
+/* PREMIUM FAQ */
+.faq-area {
+    padding: 80px 0;
+}
+.acd-items .panel {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.acd-items .panel-heading {
+    padding: 0;
+    background: #fff;
+}
+.acd-items .panel-heading .panel-title a {
+    display: block;
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    position: relative;
+    text-decoration: none;
+}
+.acd-items .panel-heading .panel-title a:after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5b5bff;
+    font-weight: bold;
+}
+.acd-items .panel-body {
+    padding: 20px 25px;
+    background: #f8fafc;
+    border-top: 1px solid rgba(0,0,0,0.03);
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.faq-area .site-heading {
+    margin-bottom: 40px;
+}
+.faq-area .site-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+</style>
     <!-- İletişim ============================================= -->
     <div id="contact" class="contact-area bg-gray default-padding bg-gray">
         <div class="container">
@@ -981,6 +1296,19 @@ window.onload = function () {
     }
 };
 </script>
+
+<!-- Premium Social Sidebar -->
+<div class="premium-social-sidebar">
+    <a href="https://x.com/ErnestSoftware" target="_blank" class="social-icon x-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/skru" target="_blank" class="social-icon linkedin-icon">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://t.me/ErnestSoftware" target="_blank" class="social-icon telegram-icon">
+        <i class="fab fa-telegram-plane"></i>
+    </a>
+</div>
 
 </body>
 </html>

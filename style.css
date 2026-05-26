@@ -5007,3 +5007,113 @@ footer .twitter-widget .twitter-item:last-child {
   left: 20px;
   z-index: 999;
 }
+} /* Closing media bracket */
+
+/* Premium Social Sidebar */
+.premium-social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+    transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 8px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: -4px 0 25px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.premium-social-sidebar:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: -6px 0 30px rgba(0, 0, 0, 0.2);
+  padding-right: 14px; /* Slight expansion on hover */
+}
+
+.premium-social-sidebar .social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2d3436, #000000);
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.premium-social-sidebar .social-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.premium-social-sidebar .social-icon:hover::before {
+  opacity: 1;
+}
+
+.premium-social-sidebar .social-icon i {
+  position: relative;
+  z-index: 2;
+}
+
+/* X (Twitter) */
+.premium-social-sidebar .x-icon {
+  background: linear-gradient(135deg, #1da1f2, #000);
+}
+.premium-social-sidebar .x-icon:hover {
+  transform: translateX(-5px) scale(1.15);
+  box-shadow: 0 6px 20px rgba(29, 161, 242, 0.6);
+}
+
+/* LinkedIn */
+.premium-social-sidebar .linkedin-icon {
+  background: linear-gradient(135deg, #0077b5, #005582);
+}
+.premium-social-sidebar .linkedin-icon:hover {
+  transform: translateX(-5px) scale(1.15);
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.6);
+}
+
+/* Telegram */
+.premium-social-sidebar .telegram-icon {
+  background: linear-gradient(135deg, #0088cc, #005b8a);
+}
+.premium-social-sidebar .telegram-icon:hover {
+  transform: translateX(-5px) scale(1.15);
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.6);
+}
+
+/* Mobile Responsiveness for Premium Social Sidebar */
+@media (max-width: 768px) {
+  .premium-social-sidebar {
+    padding: 8px 4px;
+    gap: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .premium-social-sidebar .social-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
