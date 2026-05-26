@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="description" content="Ernest Soft - Blockchain Consulting">
+	
+
+    <!-- ========== Page Title ========== -->
+    <title>Ernest Soft - Blockchain Consulting</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+	<link href="assets/css/skr.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+
+</head>
+
+<body>
+  <!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ErnestSoft</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f7f8fc;overflow-x:hidden;}
+
+/* HEADER */
+.headers{
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+
+    z-index: 9999;
+}
+.logo{font-size:20px;font-weight:700;}
+.logo span{color:#5b5bff;}
+
+.headers-right{display:flex;align-items:center;gap:10px;}
+
+.portal-btn{
+background:#0d1b2a;color:white;
+padding:6px 12px;border-radius:8px;font-size:12px;
+}
+
+.menu{
+width:38px;height:38px;background:#5b5bff;
+border-radius:10px;display:flex;justify-content:center;align-items:center;
+color:white;font-size:18px;cursor:pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    position: fixed;
+
+    top: 62px;
+    right: -100%;
+
+    width: 220px; /* DARALT */
+    height: auto; /* İÇERİĞE GÖRE */
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 15px;
+
+    border-radius: 10px 0 0 10px; /* daha güzel görünüm */
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+
+    transition: right 0.3s ease;
+
+    z-index: 9998;
+
+}
+.mobile-menu.active {
+    right: 0px; /* TAM YAPIŞMASIN → daha şık */
+
+}
+
+
+.close-btn{
+position:absolute;top:15px;right:20px;
+font-size:22px;cursor:pointer;
+}
+
+.mobile-menu a{
+color:#1f2a37;
+font-size:16px;
+font-weight:500;
+text-decoration:none;
+transition:0.2s;
+}
+.mobile-menu a:hover{
+color:#5b5bff;
+padding-left:5px;
+}
+
+/* HERO */
+.hero{
+position:relative;
+height:420px; /* SABİT YÜKSEKLİK */
+overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+/* MATRIX */
+#matrix{
+position:absolute;
+top:0;left:0;
+width:100%;
+height:100%;
+opacity:0.3;
+
+}
+
+/* SLIDER */
+.slides{
+position:relative;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.slide{
+position:absolute;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0;
+transition:1s;
+}
+
+.slide.active{opacity:1;}
+
+.slide-content{
+text-align:center;
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* TEXT */
+.hero h1{
+font-size:38px;
+color:#1f2a37;
+font-weight:850;
+}
+.hero h1 span{color:#5b5bff;}
+
+.hero p{
+color:#666;
+font-size:15px;
+}
+
+/* BUTTONS */
+.buttons{
+display:flex;
+gap:12px;
+justify-content:center;
+}
+
+.buttons a{text-decoration:none;}
+
+.btn-primary{
+background:#5b5bff;
+color:white;
+padding:12px 20px;
+border-radius:10px;
+}
+
+.btn-outline{
+border:2px solid #5b5bff;
+color:#5b5bff;
+padding:12px 20px;
+border-radius:10px;
+position: relative;
+  z-index: 9999;
+}
+
+/* DOTS */
+.dots{
+position:absolute;
+bottom:15px; /* TAM AYAR */
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:8px;
+}
+
+.dot{
+width:10px;height:10px;border-radius:50%;
+background:#ccc;cursor:pointer;
+}
+.dot.active{
+background:#5b5bff;
+transform:scale(1.2);
+}
+
+@media (min-width:768px){
+.hero h1{font-size:42px;}
+.hero p{font-size:17px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="headers">
+<div class="logo">Ernest<span>Soft</span></div>
+<div class="headers-right">
+<a href="https://t.me/ErnestSoftware" class="portal-btn">Portal</a>
+<div class="menu" onclick="toggleMenu()">☰</div>
+</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+<div class="close-btn" onclick="toggleMenu()">✕</div>
+<a href="#matrix">Home</a>
+<a href="#services">Services</a>
+<a href="About.html">About us</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="hero">
+<canvas id="matrix"></canvas>
+
+<div class="slides">
+
+<div class="slide active">
+<div class="slide-content">
+<h1>Modern Software <br><span>Solution</span></h1>
+
+<div class="buttons">
+<a href="#" class="btn-primary">Contact Us</a>
+<a href="about.html" class="btn-outline">More About Us</a>
+</div>
+</div>
+</div>
+
+<div class="slide">
+<div class="slide-content">
+<h1>Secure Blockchain   <br><span>Solutions</span></h1>
+
+<div class="buttons">
+<a href="#" class="btn-primary">Contact Us</a>
+<a href="#" class="btn-outline">More About Us</a>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="slide-content">
+<h1>Take Your Business<br><span>To The Future</span></h1>
+
+<div class="buttons">
+<a href="#" class="btn-primary">Contact Us</a>
+<a href="#" class="btn-outline">More About Us</a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="dots">
+<div class="dot active" onclick="goSlide(0)"></div>
+<div class="dot" onclick="goSlide(1)"></div>
+<div class="dot" onclick="goSlide(2)"></div>
+</div>
+
+</div>
+
+<script>
+function toggleMenu(){
+document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+let currentSlide=0;
+const slides=document.querySelectorAll(".slide");
+const dots=document.querySelectorAll(".dot");
+
+function showSlide(index){
+slides.forEach((s,i)=>{
+s.classList.remove("active");
+dots[i].classList.remove("active");
+});
+slides[index].classList.add("active");
+dots[index].classList.add("active");
+currentSlide=index;
+}
+
+function goSlide(i){showSlide(i);}
+
+setInterval(()=>{
+let next=(currentSlide+1)%slides.length;
+showSlide(next);
+},5000);
+
+/* MATRIX */
+const canvas=document.getElementById("matrix");
+const ctx=canvas.getContext("2d");
+
+let drops=[];
+let fontSize=16;
+let density=1.8; // 🔥 daha yoğun kolon
+
+function resize(){
+    canvas.width=window.innerWidth;
+
+    let hero=document.querySelector(".hero");
+    canvas.height = hero ? hero.offsetHeight : window.innerHeight;
+
+    let columns=Math.floor(canvas.width/(fontSize*density));
+
+    drops=[];
+    for(let i=0;i<columns;i++) drops[i]=Math.random()*canvas.height;
+}
+
+resize();
+window.addEventListener("resize",resize);
+
+function draw(){
+
+    ctx.fillStyle="rgba(247,248,252,0.06)";
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+
+    ctx.fillStyle="rgba(91,91,255,0.75)"; // 🔥 biraz daha belirgin
+    ctx.font=fontSize+"px monospace";
+
+    for(let i=0;i<drops.length;i++){
+
+        // 🔥 daha sık yazı
+        if(Math.random() > 0.45){
+
+            let text = Math.random()>0.5 ? "0" : "1";
+
+            let x = i * fontSize * density;
+            let y = drops[i] * fontSize;
+
+            ctx.fillText(text, x, y);
+        }
+
+        // 🔥 biraz daha hızlı akış
+        drops[i] += 0.65;
+
+        if(drops[i]*fontSize > canvas.height && Math.random() > 0.94){
+            drops[i] = 0;
+        }
+    }
+}
+
+setInterval(draw, 80); // 🔥 daha hızlı frame
+</script>
+
+</body>
+</html>
+   
+    <!-- End Banner -->
+
+    <!-- Start About 
+    ============================================= -->
+    <div id="about" class="chart-area default-padding top-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 default info">
+                    <h2>  From Idea to <span>Production</span></h2>
+                    <p class="hero-desc">
+    Planning, development, testing and deployment - we manage every phase meticulously and deliver your project on time.
+  </p>
+                </div>
+             <div class="terminal">
+  <div class="header">
+    <div class="dot red"></div>
+    <div class="dot yellow"></div>
+    <div class="dot green"></div>
+    <div class="title">bash — ErnestSoft</div>
+  </div>
+
+  <div class="content" id="output"></div>
+</div>
+
+
+
+<style>
+.terminal {
+  width: 45%;
+  max-width: 900px;
+  height: 350px;
+  background: #000;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: -10px auto;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  font-family: monospace;
+  margin-top:70px;
+}
+
+.header {
+  background: #1f2937;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.title {
+  margin-left: 10px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.content {
+  padding: 20px;
+  color: white;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  font-size: 16px;
+}
+
+.green-text { color: #00ff9c; }
+.blue-text { color: #7aa2f7; }
+
+.cta {
+  display: block;
+  margin: 20px auto;
+  padding: 14px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+const lines = [
+  { text: "$ Connecting to ErnestSoft system...", class: "blue-text" },
+  { text: "Analyzing your business...", class: "" },
+
+  { text: "✔️ Requirements identified", class: "green-text" },
+  { text: "✔️ Custom software solution ready", class: "green-text" },
+  { text: "✔️ Processes automated", class: "green-text" },
+
+  { text: "", class: "" },
+
+  { text: "$ Enhancing performance...", class: "blue-text" },
+
+  { text: "⚡ Faster systems", class: "blue-text" },
+  { text: "⚡ Lower costs", class: "blue-text" },
+  { text: "⚡ Higher efficiency", class: "blue-text" },
+
+  { text: "", class: "" },
+
+  { text: "✔️ 24/7 support", class: "green-text" },
+  { text: "✔️ Fast delivery", class: "green-text" },
+
+  { text: "", class: "" },
+
+  { text: "▶ Deploying your system...", class: "blue-text" },
+  { text: "✔️ Everything is ready!", class: "green-text" }
+
+];
+
+let i = 0;
+let charIndex = 0;
+
+const output = document.getElementById("output");
+
+function typeWriter() {
+  if (i >= lines.length) {
+    setTimeout(() => {
+      output.innerHTML = "";
+      i = 0;
+      charIndex = 0;
+      typeWriter();
+    }, 1500);
+    return;
+  }
+
+  const line = lines[i];
+
+  if (charIndex === 0) {
+    output.innerHTML += `<span class="${line.class || ''}"></span>`;
+  }
+
+  const spans = output.querySelectorAll("span");
+  const currentSpan = spans[spans.length - 1];
+
+  if (charIndex < line.text.length) {
+    currentSpan.innerHTML += line.text.charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWriter, 20);
+  } else {
+    output.innerHTML += "<br>";
+    i++;
+    charIndex = 0;
+    setTimeout(typeWriter, 50);
+  }
+}
+
+typeWriter();
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Services 
+    ============================================= --> 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+
+<style>
+/* GENEL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7; /* TÜM SAYFA AYNI RENK */
+}
+
+/* SECTION */
+.service-wrapper {
+  
+}
+
+/* BAŞLIK */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+ font-weight: 900;
+  margin-bottom: 10px;
+  color: #111;
+    padding-top: 90px;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* GRID */
+.servicexx {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* KART */
+.servicexx-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* HOVER */
+.servicexx-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.servicexx-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.servicexx-card h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.servicexx-card p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* LINK */
+.servicexx-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .servicexx {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBİL */
+@media (max-width: 600px) {
+  .servicexx {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+ 
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="service-wrapper">
+<div class="section" id="services">
+  <div class="section-title">
+    <h2>Our Core Software Services</h2>
+    <p>Every software solution your business needs to grow, all under one roof.</p>
+  </div>
+
+  <section class="servicexx">
+
+    <div class="servicexx-card">
+      <div class="servicexx-icon">💻</div>
+      <h3>Web Development</h3>
+      <p>Modern, fast and scalable web solutions.</p>
+      <a href="web.html">Learn More →</a>
+    </div>
+
+    <div class="servicexx-card">
+      <div class="servicexx-icon">📱</div>
+      <h3>Mobile Apps</h3>
+      <p>Cross-platform mobile applications.</p>
+      <a href="app.html">Learn More →</a>
+    </div>
+
+    <div class="servicexx-card">
+      <div class="servicexx-icon">🔗</div>
+      <h3>Blockchain</h3>
+      <p>Smart contracts & DeFi</p>
+      <a href="blockchain.html">Learn More →</a>
+    </div>
+
+    <div class="servicexx-card">
+      <div class="servicexx-icon">📣</div>
+      <h3>Web3 Marketing</h3>
+      <p>End-to-end marketing strategies tailored for crypto, DeFi, and blockchain projects.</p>
+      <a href="uıx.html">Learn More →</a>
+    </div>
+
+  </section>
+
+</div>
+
+</body>
+</html>
+    <!-- End Services -->
+
+    <!-- Start Work Process
+    ============================================= -->
+    <div id="process" class="work-process-area bg-gray default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-center">
+                        <h2>Work Process</h2>
+                        <span class="devider"></span>
+                        <p>
+                            We talk about your idea and after evaluating our analysis on the subject as a team, we bring your project to life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="process-items text-center">
+                    <div class="col-md-4 col-sm-4 single-item">
+                        <div class="item">
+                            <a href="#contact">
+                                <i class="fas fa-newspaper"></i>
+                                <h4>Discuss</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 single-item">
+                        <div class="item">
+                            <a href="#contact">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Analysis</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 single-item">
+                        <div class="item">
+                            <a href="#contact">
+                                <i class="fas fa-check-double"></i>
+                                <h4>Launch</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Work Process -->
+
+    <!-- Start Our Goal
+    ============================================= -->
+    <div id="goal" class="our-goal-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="goal-items goal-carousel owl-carousel owl-theme">
+                    <!-- Single Item -->
+                    <div class="item">
+                        <div class="col-md-6 thumb">
+                            <img src="assets/img/6781269.png" alt="Thumb">
+                        </div>
+                        <div class="col-md-6 info">
+                            <h2>Why Choose us</h2>
+                            <h4>Because we are Reliable.</h4>
+                            <p>
+                                Ernest Soft is the only address for affordable price and quality service. What you will realize when you start working with us is how clean and careful we manage your business with a team. We keep ourselves and our employees updated by following the latest technology trends. We can do this together. Contact us now to bid.
+                            </p>
+                            <blockquote>
+                                We always stay with our clients and respect their business. We deliver 100% and provide instant response.
+                            </blockquote>
+                            <ul>
+                                <li>First Working Prosses</li>
+                                <li>ICO Control Solutions</li>
+                                <li>Blockchain Solutions</li>
+                                <li>Cryptocurency Solutions</li>
+                                <li>Defi Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="item">
+                        <div class="col-md-6 thumb">
+                            <img src="assets/img/4348403.jpg" alt="Thumb">
+                        </div>
+                        <div class="col-md-6 info">
+                            <h2>Our Mission</h2>
+                            <h4>To Redefine your Career</h4>
+                            <p>
+                                Our mission is to create a quality and secure blockchain infrastructure, and to bring both your company and Ernest Soft to more users.
+                            </p>
+                            <blockquote>
+                                We always stay with our clients and respect their business. We deliver 100% and provide instant response.
+                            </blockquote>
+                            <ul>
+                                <li>First Working Prosses</li>
+                                <li>ICO Control Solutions</li>
+                                <li>Blockchain Solutions</li>
+                                <li>Cryptocurency Solutions</li>
+                                <li>Defi Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Goal -->
+
+<style>
+/* PREMIUM TESTIMONIALS */
+.testimonials-premium {
+    padding: 100px 0;
+    background: #f8fafc;
+    position: relative;
+    overflow: hidden;
+}
+.testimonials-premium::before {
+    content: ''; 
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    background: radial-gradient(circle at top right, rgba(91,91,255,0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+.testi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+.testi-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.testi-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(91,91,255,0.05), transparent);
+    opacity: 0; transition: 0.4s; pointer-events: none; border-radius: 20px;
+}
+.testi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(91,91,255,0.12);
+    border-color: rgba(91,91,255,0.1);
+}
+.testi-card:hover::before { opacity: 1; }
+.testi-card .quote-icon {
+    font-size: 38px;
+    color: #5b5bff;
+    opacity: 0.1;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: 0.4s;
+}
+.testi-card:hover .quote-icon { opacity: 0.25; transform: scale(1.1); }
+.testi-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-style: italic;
+}
+.testi-author {
+    display: flex;
+    flex-direction: column;
+}
+.testi-author h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+.testi-author span {
+    font-size: 13px;
+    color: #5b5bff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.testimonials-premium .site-heading {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.testimonials-premium .site-heading h2 {
+    color: #0f172a;
+    font-size: 36px;
+    font-weight: 700;
+}
+.testimonials-premium .site-heading h2 span {
+    background: linear-gradient(to right, #5b5bff, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.testimonials-premium .site-heading p {
+    color: #64748b;
+}
+.testi-stars {
+    color: #fbbf24;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 5px;
+}
+</style>
+
+    <!-- Start Testimonials -->
+    <div id="testimonials" class="testimonials-premium">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-center">
+                        <h2>Client <span>Feedback</span></h2>
+                        <span class="devider" style="background: linear-gradient(to right, #5b5bff, #c084fc); margin: 15px auto; width: 60px; height: 4px; border-radius: 2px;"></span>
+                        <p>
+                            What our partners and clients say about our bespoke software and blockchain solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testi-grid">
+                        
+                        <!-- Item 1 -->
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="testi-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>
+                                "ErnestSoft transformed our ideas into a functional, highly secure blockchain application faster than we expected. Their team's expertise is unmatched."
+                            </p>
+                            <div class="testi-author">
+                                <h4>John Doe</h4>
+                                <span>CEO, TechVision</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="testi-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>
+                                "The mobile app they delivered is flawless. They were communicative throughout the entire process. Security is top notch. Highly recommended!"
+                            </p>
+                            <div class="testi-author">
+                                <h4>Sarah Jenkins</h4>
+                                <span>Founder, Appify</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="testi-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>
+                                "We needed a scalable web solution and ErnestSoft provided just that. Their dedication to quality and performance is truly commendable."
+                            </p>
+                            <div class="testi-author">
+                                <h4>Michael Smith</h4>
+                                <span>CTO, Innovate Solutions</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start FAQ -->
+    <div id="faq" class="faq-area default-padding" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-center">
+                        <h2>Frequently Asked <span>Questions</span></h2>
+                        <span class="devider" style="background: linear-gradient(to right, #5b5bff, #c084fc); margin: 15px auto; width: 60px; height: 4px; border-radius: 2px;"></span>
+                        <p>
+                            Find answers to your questions about our development process and services here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="acd-items acd-arrow">
+                        <div class="panel-group symb" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac1">
+                                            How does your project development process work?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            We start with a requirements analysis. Then, we complete your project through design, development, testing, and deployment stages. We maintain constant communication with you throughout the entire process.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac2" class="collapsed">
+                                            What technologies do you use?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Although it varies depending on the project and needs, we generally work with Node.js, React, Vue, Python, Solidity, Web3.js, and modern database solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac3" class="collapsed">
+                                            Do you provide support after projects are delivered?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Yes, depending on the size and scope of the project, we provide free support for a certain period after delivery. We can also make long-term maintenance agreements.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac4" class="collapsed">
+                                            Do you do blockchain and crypto integrations?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Yes, we provide services with our expert team in smart contract development, wallet integrations (MetaMask, etc.), and general Web3 solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End FAQ -->
+<style>
+/* PREMIUM FAQ */
+.faq-area {
+    padding: 80px 0;
+}
+.acd-items .panel {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.acd-items .panel-heading {
+    padding: 0;
+    background: #fff;
+}
+.acd-items .panel-heading .panel-title a {
+    display: block;
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    position: relative;
+    text-decoration: none;
+}
+.acd-items .panel-heading .panel-title a:after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5b5bff;
+    font-weight: bold;
+}
+.acd-items .panel-body {
+    padding: 20px 25px;
+    background: #f8fafc;
+    border-top: 1px solid rgba(0,0,0,0.03);
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.faq-area .site-heading {
+    margin-bottom: 40px;
+}
+.faq-area .site-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+</style>
+    <!-- İletişim ============================================= -->
+    <div id="contact" class="contact-area bg-gray default-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-5 contact-form">
+                    <div class="info">
+                        <h2>Let's talk about your idea</h2>
+                        <p>
+                            Come on and share your opinion with us. Let's create solutions for your ideas on Blockchain with our expert team. 
+                        </p>
+                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <button type="submit" name="submit" id="submit">
+                                        Send Message <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Uyarı Mesajı -->
+                            <div class="col-md-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- İletişim Sonu -->
+
+    <!-- Footer 
+    ============================================= -->
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="f-items default-padding">
+
+                    <!-- Bilgiler -->
+                    <div class="col-md-4 equal-height item">
+                        <div class="f-item about">
+                            <h4>About</h4>
+                            <p>
+                                20, floor, Queenslad Victoria Building. 60 california street california USA
+                            </p>
+                            <ul>
+                                <li>
+                                    
+                                </li>
+                                <li>
+                                    <span>Email: </span> <a href="mailto:info@ernestsoft.com">info@ernestsoft.com</a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                    <!-- Bilgiler bitiş -->
+<div class="map-area">
+    <iframe 
+        src="https://www.google.com/maps?q=60+California+Street,+San+Francisco,+CA&output=embed"
+        loading="lazy">
+    </iframe>
+	
+</div>
+                    <!-- Bilgiler -->
+                    
+                    <!-- Bilgiler Bitiş -->
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; Copyright <span id="yil"></span>. All Rights Reserved by <a href="#home">Ernest Soft</a></p>
+                    </div>
+                    <div class="col-md-6 text-right link">
+                        <ul>
+                            <li>
+                                <a href="./term.html">Terms of us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("yil").innerHTML = year;
+    </script>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+<script>
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+window.onload = function () {
+    if (!window.location.hash) {
+        window.scrollTo(0, 0);
+    }
+};
+</script>
+
+<!-- Premium Social Sidebar -->
+<div class="premium-social-sidebar">
+    <a href="https://x.com/ErnestSoftware" target="_blank" class="social-icon x-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/skru" target="_blank" class="social-icon linkedin-icon">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://t.me/ErnestSoftware" target="_blank" class="social-icon telegram-icon">
+        <i class="fab fa-telegram-plane"></i>
+    </a>
+</div>
+
+</body>
+</html>

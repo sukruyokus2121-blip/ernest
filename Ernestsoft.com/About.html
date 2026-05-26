@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{ margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+body{ background:#f8fafc; color:#1e293b; }
+
+/* HERO */
+.hero{
+  padding:120px 20px 80px;
+  text-align:center;
+  background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+  position: relative;
+  overflow: hidden;
+  color:#fff;
+  margin-top: 62px;
+}
+.hero::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.4), transparent 70%); pointer-events: none;
+}
+.hero h1{
+  font-size: 42px; font-weight: 700; letter-spacing: -1px; margin-bottom: 25px;
+  background: linear-gradient(to right, #ffffff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  position: relative; z-index: 2;
+}
+
+/* SECTION */
+.section{ padding:80px 15px; background: #f8fafc; }
+.section:nth-child(even) { background: #f1f5f9; }
+.container{ max-width:1100px; margin:auto; }
+
+/* TITLE */
+.section h2{
+  font-size: 32px; margin-bottom: 45px; position:relative; font-weight: 700; color: #0f172a; text-align: center; letter-spacing: -0.5px;
+}
+.section h2::after{
+  content:""; display:block; width:60px; height:4px; background: linear-gradient(90deg, #4f46e5, #ec4899); margin: 12px auto 0; border-radius:4px;
+}
+
+/* GRID */
+.grid, .approach, .tech-grid{
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px;
+}
+
+/* CARD */
+.card, .approach div, .tech-card{
+  background:#fff; border-radius:20px; padding:30px 20px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; box-shadow: 0 10px 30px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden; opacity:0; transform:translateY(20px); animation:fadeUp 0.6s ease forwards;
+}
+.card::before, .approach div::before, .tech-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), transparent); opacity: 0; transition: 0.4s; pointer-events: none;
+}
+@keyframes fadeUp{ to{ opacity:1; transform:translateY(0); } }
+
+/* ANIMATION DELAYS */
+.card:nth-child(1), .approach div:nth-child(1), .tech-card:nth-child(1) { animation-delay: .1s; }
+.card:nth-child(2), .approach div:nth-child(2), .tech-card:nth-child(2) { animation-delay: .2s; }
+.card:nth-child(3), .approach div:nth-child(3), .tech-card:nth-child(3) { animation-delay: .3s; }
+.card:nth-child(4), .approach div:nth-child(4), .tech-card:nth-child(4) { animation-delay: .4s; }
+.card:nth-child(5), .tech-card:nth-child(5) { animation-delay: .5s; }
+.card:nth-child(6), .tech-card:nth-child(6) { animation-delay: .6s; }
+
+/* HOVER */
+.card:hover, .approach div:hover, .tech-card:hover{
+  transform:translateY(-10px); box-shadow: 0 20px 40px rgba(79,70,229,0.12); border-color: rgba(79,70,229,0.1);
+}
+.card:hover::before, .approach div:hover::before, .tech-card:hover::before { opacity: 1; }
+
+/* ICON */
+.icon{ width: 64px; height: 64px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #eef2ff, #f8fafc); border-radius: 16px; font-size: 28px; margin-bottom: 20px; color: #4f46e5; box-shadow: 0 4px 10px rgba(79,70,229,0.1); transition: 0.4s; }
+.card:hover .icon, .approach div:hover .icon { transform: scale(1.1); background: linear-gradient(135deg, #4f46e5, #818cf8); border-radius: 50%; color: white; }
+
+/* TEXT */
+.card h3, .approach h3{ font-size: 18px; margin-bottom: 8px; font-weight: 600; color: #1e293b; }
+.card p, .approach p{ font-size: 14px; color: #64748b; line-height: 1.6; }
+
+/* TECH */
+.tech-card img{ width: 50px; margin-bottom: 15px; transition: transform 0.4s; }
+.tech-card:hover img { transform: scale(1.15) translateY(-5px); }
+.tech-card h3{ font-size: 15px; color: #334155; font-weight: 600; }
+
+/* FOOTER */
+.footer{ text-align:center; padding:30px; background: #0f172a; color: #94a3b8; margin-top:30px; font-size:14px; border-top: 1px solid rgba(255,255,255,0.05); }
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>About Us</h1>
+  
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+<div class="container">
+
+<h2>Our Expertise</h2>
+
+<div class="grid">
+  <div class="card">
+    <div class="icon">🎨</div>
+    <h3>UI/UX Design</h3>
+    <p>User-centered experiences</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🌐</div>
+    <h3>Web Development</h3>
+    <p>Modern web applications</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">⛓</div>
+    <h3>Blockchain</h3>
+    <p>Smart contracts & DeFi</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🤖</div>
+    <h3>AI Solutions</h3>
+    <p>Intelligent systems</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">📊</div>
+    <h3>CRM & ERP</h3>
+    <p>Business process optimization</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🚀</div>
+    <h3>SEO</h3>
+    <p>Growth-driven strategies</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- APPROACH -->
+<div class="section">
+<div class="container">
+
+<h2>Our Approach</h2>
+
+<div class="approach">
+  <div>
+    <div class="icon">🎯</div>
+    <h3>Strategy</h3>
+    <p>Clear and structured planning</p>
+  </div>
+
+  <div>
+    <div class="icon">⚡</div>
+    <h3>Speed</h3>
+    <p>Optimized processes</p>
+  </div>
+
+  <div>
+    <div class="icon">🔒</div>
+    <h3>Security</h3>
+    <p>Robust infrastructure</p>
+  </div>
+
+  <div>
+    <div class="icon">🛠</div>
+    <h3>Support</h3>
+    <p>Continuous assistance</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- TECH -->
+<div class="section">
+<div class="container">
+
+<h2>Technologies We Use</h2>
+
+<div class="tech-grid">
+  <div class="tech-card">
+    <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg">
+    <h3>Next.js</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg">
+    <h3>Laravel</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg">
+    <h3>Tailwind</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
+    <h3>Python</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum-icon-purple.svg">
+    <h3>Blockchain</h3>
+  </div>
+
+  <div class="tech-card">
+    <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg">
+    <h3>Node.js</h3>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+  © 2026 All Rights Reserved
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+<div class="headers">
+<div class="logo">Ernest<span>Soft</span></div>
+<div class="headers-right">
+<a href="https://t.me/ErnestSoftware" class="portal-btn">Portal</a>
+<div class="menu" onclick="toggleMenu()">☰</div>
+</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+<div class="close-btn" onclick="toggleMenu()">✕</div>
+<a href="index.html#matrix">Home</a>
+<a href="index.html#services">Services</a>
+<a href="About.html">About us</a>
+<a href="index.html#contact">Contact</a>
+</div>
+
+
+
+<!-- Premium Social Sidebar -->
+<div class="premium-social-sidebar">
+    <a href="https://x.com/ErnestSoftware" target="_blank" class="social-icon x-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/skru" target="_blank" class="social-icon linkedin-icon">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://t.me/ErnestSoftware" target="_blank" class="social-icon telegram-icon">
+        <i class="fab fa-telegram-plane"></i>
+    </a>
+</div>
+
+</body>
+<style>
+.headers{
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+
+    z-index: 9999;
+}
+.logo{font-size:20px;font-weight:700;}
+.logo span{color:#5b5bff;}
+
+.headers-right{display:flex;align-items:center;gap:10px;}
+
+.portal-btn{
+background:#0d1b2a;color:white;
+padding:6px 12px;border-radius:8px;font-size:12px;
+}
+
+.menu{
+width:38px;height:38px;background:#5b5bff;
+border-radius:10px;display:flex;justify-content:center;align-items:center;
+color:white;font-size:18px;cursor:pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    position: fixed;
+
+    top: 62px;
+    right: -100%;
+
+    width: 220px; /* DARALT */
+    height: auto; /* İÇERİĞE GÖRE */
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 15px;
+
+    border-radius: 10px 0 0 10px; /* daha güzel görünüm */
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+
+    transition: right 0.3s ease;
+
+    z-index: 9998;
+
+}
+.mobile-menu.active {
+    right: 0px; /* TAM YAPIŞMASIN → daha şık */
+
+}
+</style>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector(".menu").addEventListener("click", function() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  });
+});
+</script>
